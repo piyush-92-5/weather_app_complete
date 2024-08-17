@@ -6,7 +6,7 @@ return (
 		(e)=>{
 			e.preventDefault()
 			console.log("HAHA")
-			setSearchResults(getSearchResults(searchQuerry))
+			if (searchQuerry !== "")setSearchResults(getSearchResults(searchQuerry))
 	}} >
 		<input type="text" placeholder="Enter city name (press enter)" value={searchQuerry} onChange={(e)=> setSearchQuerry(e.target.value)} />
 	</form>
