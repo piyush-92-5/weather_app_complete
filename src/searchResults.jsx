@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export default function SearchResults({searchResults, getWeatherData, setCoor}) {
+export default function SearchResults({searchResults, getWeatherData}) {
   console.log(searchResults)
   return (
     <div className="search-results">

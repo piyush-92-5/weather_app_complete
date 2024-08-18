@@ -43,8 +43,8 @@ export default function WeatherDash({weatherData}) {
             </div>
         </div>
 
-        <div className="current-weather-val" style={{position: "relative"}}>
-            <small style={{color: "rgb(0, 183, 255)",position: "absolute", top: "35px", left: "50px"}}>N</small>
+        <div className="current-weather-val arr" style={{position: "relative"}}>
+            <small className="n" style={{color: "rgb(0, 183, 255)",position: "absolute", top: "35px", left: "50px"}}>N</small>
             <img src={Arrow} alt="Wind Direction" className="w-img arrow" style={{rotate: `${weatherData.current.wind_direction_10m - 90}deg`}} />
             <div>
                 <h2 className="val">{weatherData.current.wind_direction_10m}{weatherData.current_units.wind_direction_10m}</h2>

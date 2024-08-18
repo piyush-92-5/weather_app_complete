@@ -11,15 +11,18 @@ body{
   margin: 0;
   padding: 0;
   background-color: rgb(0, 12, 20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav{
   height: 6rem;
-  padding: 0 2rem;
+  width: 500px;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid white;
 }
 
 nav input{
@@ -131,14 +134,14 @@ nav input{
 
 .w-img{
   padding: 10px;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   filter: invert(1);
 }
 
 .arrow{
   rotate: -90deg;
-  padding: 30px;
+  padding: 25px;
 }
 
 .val{
@@ -152,4 +155,58 @@ nav input{
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 600px){
+  nav{
+    width: 300px;
+  }
+
+  nav input{
+    width: 300px;
+  }
+  .search-result{
+    width: 300px;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+  .current-weather{
+    width: 300px;
+    gap: 20px;
+  }
+
+  .current-weather-val{
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .current-weather-val .val{
+    font-size: 1.5rem;
+  }
+
+  .w-img{
+    height: 70px;
+    width: 70px;
+    padding: 15px;
+  }
+
+  .arr{
+    box-sizing: content-box;
+    position: relative;
+  }
+
+  .n{
+    margin-left: 11px;
+    position: relative;
+    font-size: 7px;
+    top: -5px;
+    right: 5px;
+  }
+
+  .arrow{
+    height: 55px;
+    width: 55px;
+    padding: 20px;
+  }
 }
