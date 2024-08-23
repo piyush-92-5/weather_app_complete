@@ -4,8 +4,6 @@ import Humidity from "./assets/humidity.png"
 import Precipitation from "./assets/weather.png"
 import Wind from "./assets/wind.png"
 import Arrow from "./assets/arrow.png"
-import Sunrise from "./assets/sunrise.png"
-import Sunset from "./assets/sunset.png"
 
 export default function WeatherDash({weatherData}) {
   return (
